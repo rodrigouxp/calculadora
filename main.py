@@ -4,9 +4,9 @@ from tkinter import *
 # Inicialização da janela
 root = Tk()
 root.title('Calculadora')
-root.geometry('406x355')
-root.minsize(406,355)
-root.maxsize(406,355)
+root.geometry('406x354')
+root.minsize(406,354)
+root.maxsize(406,354)
 root.configure(background='#282828')
 
 # Globais
@@ -15,7 +15,6 @@ divide = FALSE
 multiplica = FALSE
 subtrai = FALSE
 adiciona = FALSE
-
 
 
 # Funções dos operadores
@@ -62,7 +61,6 @@ def botao_limpa():
     adiciona = FALSE
     input.delete(0, END)
     
-
 def botao_igual():
     global divide
     global multiplica
@@ -83,9 +81,6 @@ def botao_igual():
         input.insert(0, int(numero1) + int(numero2))
         adiciona == FALSE
     
-
-
-
 
 # Top
 # Input
@@ -335,7 +330,6 @@ igual = Button(root,
                    font=('courier', 12, 'bold'),
                    )
 igual.grid(row=4, column=4)
-
 
 
 # Loop para a janela continuar aberta enquanto espera alguma ação do usuário
